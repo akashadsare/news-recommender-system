@@ -1,5 +1,7 @@
 # AI-Powered News Recommendation System
 
+**Author:** [Akash Adsare](https://github.com/akashadsare)
+
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Framework](https://img.shields.io/badge/flask-2.1.0-green)
 ![ML Library](https://img.shields.io/badge/scikit--learn-1.0.2-orange)
@@ -205,4 +207,4 @@ kubectl apply -f docker/kubernetes.yaml
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Copyright (c) 2025 Akash Adsare. See the [LICENSE](LICENSE) file for details.
