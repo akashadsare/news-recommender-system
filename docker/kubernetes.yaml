@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: news-recommender
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: news-recommender
+  template:
+    metadata:
+      labels:
+        app: news-recommender
+    spec:
+      containers:
+      - name: news-recommender
+        image: news-recommender:latest
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: news-recommender-service
+spec:
+  type: NodePort
+  selector:
+    app: news-recommender
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080 
